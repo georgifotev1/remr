@@ -1,0 +1,34 @@
+version: "2"
+
+run:
+  build-tags:
+    - integration
+
+linters:
+  enable:
+    - bodyclose
+    - depguard
+    - errorlint
+    - exhaustive
+    - forbidigo
+    - gosec
+    - nilerr
+    - noctx
+    - revive
+    - rowserrcheck
+    - sqlclosecheck
+  settings:
+    forbidigo:
+      forbid:
+        - pattern: ^os\.Getenv$
+          msg: read config via internal/platform/config only
+        - pattern: ^http\.DefaultClient$
+          msg: use a configured http.Client with timeouts
+    depguard:
+      rules:
+        platform-is-leaf:
+          files:
+            - "**/internal/platform/**"
+          deny:
+            - pkg: github.com/georgifotev1/remr/internal/app
+              desc: platform must not depend on the composition root

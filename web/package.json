@@ -1,0 +1,30 @@
+{
+  "name": "remr-web",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "packageManager": "pnpm@10.33.0",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "typecheck": "vue-tsc --noEmit",
+    "preview": "vite preview",
+    "lint": "biome check",
+    "format": "biome check --write"
+  },
+  "dependencies": {
+    "@vueuse/core": "^15.0.0",
+    "vue": "^3.5.45",
+    "vue-router": "^5.4.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.6.5",
+    "@vitejs/plugin-vue": "^6.0.10",
+    "typescript": "~6.0.2",
+    "vite": "^8.3.6",
+    "vue-tsc": "^3.3.14"
+  }
+}

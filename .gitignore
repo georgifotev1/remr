@@ -1,0 +1,46 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors / IDEs
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+*.swp
+*~
+
+# Env & secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+service-account*.json
+
+# Go
+/bin/
+*.exe
+*.test
+*.out
+coverage.*
+go.work
+go.work.sum
+
+# Node
+node_modules/
+.pnpm-store/
+web/dist/*
+!web/dist/.gitkeep
+*.tsbuildinfo
+npm-debug.log*
+pnpm-debug.log*
+yarn-error.log*
+
+# Test / tooling output
+coverage/
+.cache/
+
+# Logs & temp
+*.log
+tmp/

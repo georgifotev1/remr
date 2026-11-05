@@ -1,0 +1,59 @@
+// Project settings for Zed. Biome lives in web/node_modules, which the Biome
+// extension does not look in by default, so point it there explicitly.
+{
+  "format_on_save": "on",
+  "lsp": {
+    "biome": {
+      "binary": {
+        "path": "web/node_modules/@biomejs/biome/bin/biome",
+        "arguments": ["lsp-proxy"]
+      },
+      "settings": {
+        "require_config_file": true
+      }
+    },
+    "gopls": {
+      "initialization_options": {
+        "gofumpt": false
+      }
+    }
+  },
+  "languages": {
+    "Go": {
+      "formatter": "language_server",
+      "code_actions_on_format": {
+        "source.organizeImports": true
+      }
+    },
+    "Vue.js": {
+      "formatter": { "language_server": { "name": "biome" } },
+      "code_actions_on_format": {
+        "source.fixAll.biome": true,
+        "source.organizeImports.biome": true
+      }
+    },
+    "TypeScript": {
+      "formatter": { "language_server": { "name": "biome" } },
+      "code_actions_on_format": {
+        "source.fixAll.biome": true,
+        "source.organizeImports.biome": true
+      }
+    },
+    "JavaScript": {
+      "formatter": { "language_server": { "name": "biome" } },
+      "code_actions_on_format": {
+        "source.fixAll.biome": true,
+        "source.organizeImports.biome": true
+      }
+    },
+    "JSON": {
+      "formatter": { "language_server": { "name": "biome" } }
+    },
+    "JSONC": {
+      "formatter": { "language_server": { "name": "biome" } }
+    },
+    "CSS": {
+      "formatter": { "language_server": { "name": "biome" } }
+    }
+  }
+}
