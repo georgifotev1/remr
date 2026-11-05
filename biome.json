@@ -7,7 +7,11 @@
     "useIgnoreFile": true
   },
   "files": {
-    "includes": ["web/**", "!web/dist", "!web/node_modules"]
+    "includes": [
+      "web/**",
+      "!web/dist",
+      "!web/node_modules"
+    ]
   },
   "formatter": {
     "enabled": true,
@@ -37,5 +41,24 @@
         "organizeImports": "on"
       }
     }
-  }
+  },
+  "css": {
+    "parser": {
+      "tailwindDirectives": true
+    }
+  },
+  "overrides": [
+    {
+      "includes": [
+        "web/src/components/ui/**"
+      ],
+      "linter": {
+        "rules": {
+          "style": {
+            "useVueMultiWordComponentNames": "off"
+          }
+        }
+      }
+    }
+  ]
 }

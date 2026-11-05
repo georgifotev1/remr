@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useFetch } from '@vueuse/core'
-import { Button } from 'primevue'
+import { Button } from '@/components/ui/button'
 
 interface HealthResponse {
   status: string
