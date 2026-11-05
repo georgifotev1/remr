@@ -1,0 +1,19 @@
+/* Global base. PrimeVue's tokens are exposed as --p-* variables (e.g. --p-primary-500). */
+html {
+  font-family: "Geist", ui-sans-serif, system-ui, sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  background: var(--p-surface-50);
+  color: var(--p-text-color);
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--p-primary-500), transparent 75%);
+}
