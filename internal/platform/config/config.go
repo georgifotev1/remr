@@ -12,7 +12,7 @@ import (
 
 // Config is parsed once at startup and passed to constructors by value.
 type Config struct {
-	Service string `env:"SERVICE_NAME" envDefault:"remr"`
+	Service string `env:"SERVICE_NAME" envDefault:"remy"`
 	Env     string `env:"APP_ENV,required"`
 	Version string
 

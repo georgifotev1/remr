@@ -14,9 +14,9 @@ import (
 	"github.com/pressly/goose/v3"
 	"github.com/pressly/goose/v3/lock"
 
-	"github.com/georgifotev1/remr/internal/platform/config"
-	"github.com/georgifotev1/remr/internal/platform/log"
-	"github.com/georgifotev1/remr/migrations"
+	"github.com/georgifotev1/remy/internal/platform/config"
+	"github.com/georgifotev1/remy/internal/platform/log"
+	"github.com/georgifotev1/remy/migrations"
 )
 
 var version = "dev"

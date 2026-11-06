@@ -6,7 +6,7 @@ COMPOSE_DEV := docker compose -f deploy/compose.dev.yaml
 
 -include .env
 APP_ENV ?= development
-DB_URL ?= postgres://remr:remr@localhost:5432/remr?sslmode=disable
+DB_URL ?= postgres://remy:remy@localhost:5432/remy?sslmode=disable
 export
 
 .PHONY: help up down migrate web-install web-build run dev test test-int lint build tidy

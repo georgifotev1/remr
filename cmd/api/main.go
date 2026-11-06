@@ -1,4 +1,4 @@
-// Command api serves the remr HTTP API and embedded web app.
+// Command api serves the remy HTTP API and embedded web app.
 package main
 
 import (
@@ -8,7 +8,7 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/georgifotev1/remr/internal/app"
+	"github.com/georgifotev1/remy/internal/app"
 )
 
 var version = "dev"

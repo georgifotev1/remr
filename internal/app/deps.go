@@ -7,8 +7,8 @@ import (
 
 	"github.com/jackc/pgx/v5/pgxpool"
 
-	"github.com/georgifotev1/remr/internal/platform/config"
-	"github.com/georgifotev1/remr/internal/platform/db"
+	"github.com/georgifotev1/remy/internal/platform/config"
+	"github.com/georgifotev1/remy/internal/platform/db"
 )
 
 // Deps holds the process-wide dependencies.

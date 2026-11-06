@@ -5,7 +5,7 @@ import (
 	"io"
 	"log/slog"
 
-	"github.com/georgifotev1/remr/internal/platform/config"
+	"github.com/georgifotev1/remy/internal/platform/config"
 )
 
 // New returns a logger writing to w in the configured format and level.

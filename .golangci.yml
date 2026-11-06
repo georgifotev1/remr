@@ -30,5 +30,5 @@ linters:
           files:
             - "**/internal/platform/**"
           deny:
-            - pkg: github.com/georgifotev1/remr/internal/app
+            - pkg: github.com/georgifotev1/remy/internal/app
               desc: platform must not depend on the composition root

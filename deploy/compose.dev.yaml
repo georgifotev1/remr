@@ -1,18 +1,18 @@
-name: remr-dev
+name: remy-dev
 
 services:
   postgres:
     image: postgres:18.6
     environment:
-      POSTGRES_USER: remr
-      POSTGRES_PASSWORD: remr
-      POSTGRES_DB: remr
+      POSTGRES_USER: remy
+      POSTGRES_PASSWORD: remy
+      POSTGRES_DB: remy
     ports:
       - "127.0.0.1:5432:5432"
     volumes:
       - pgdata:/var/lib/postgresql
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U remr -d remr"]
+      test: ["CMD-SHELL", "pg_isready -U remy -d remy"]
       interval: 2s
       timeout: 3s
       retries: 15

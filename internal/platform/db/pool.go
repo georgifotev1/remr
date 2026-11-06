@@ -10,7 +10,7 @@ import (
 
 	"github.com/jackc/pgx/v5/pgxpool"
 
-	"github.com/georgifotev1/remr/internal/platform/config"
+	"github.com/georgifotev1/remy/internal/platform/config"
 )
 
 // NewPool connects to Postgres and pings it, so a bad DB_URL fails at startup.

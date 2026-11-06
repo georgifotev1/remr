@@ -1,4 +1,4 @@
-module github.com/georgifotev1/remr
+module github.com/georgifotev1/remy
 
 go 1.26.0
 

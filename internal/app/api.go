@@ -10,10 +10,10 @@ import (
 	"os"
 	"time"
 
-	"github.com/georgifotev1/remr/internal/platform/config"
-	"github.com/georgifotev1/remr/internal/platform/log"
-	"github.com/georgifotev1/remr/internal/platform/spa"
-	webassets "github.com/georgifotev1/remr/web"
+	"github.com/georgifotev1/remy/internal/platform/config"
+	"github.com/georgifotev1/remy/internal/platform/log"
+	"github.com/georgifotev1/remy/internal/platform/spa"
+	webassets "github.com/georgifotev1/remy/web"
 )
 
 type pinger interface {

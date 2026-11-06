@@ -4,14 +4,14 @@ import "testing"
 
 func TestLoadValid(t *testing.T) {
 	t.Setenv("APP_ENV", "development")
-	t.Setenv("DB_URL", "postgres://remr@localhost:5432/remr?sslmode=disable")
+	t.Setenv("DB_URL", "postgres://remy@localhost:5432/remy?sslmode=disable")
 
 	c, err := Load()
 	if err != nil {
 		t.Fatalf("Load() error = %v", err)
 	}
-	if c.Service != "remr" {
-		t.Errorf("Service = %q, want remr", c.Service)
+	if c.Service != "remy" {
+		t.Errorf("Service = %q, want remy", c.Service)
 	}
 	if c.HTTP.Addr != ":8080" {
 		t.Errorf("HTTP.Addr = %q, want :8080", c.HTTP.Addr)
@@ -23,7 +23,7 @@ func TestLoadValid(t *testing.T) {
 
 func TestLoadInvalidEnv(t *testing.T) {
 	t.Setenv("APP_ENV", "nope")
-	t.Setenv("DB_URL", "postgres://remr@localhost:5432/remr?sslmode=disable")
+	t.Setenv("DB_URL", "postgres://remy@localhost:5432/remy?sslmode=disable")
 
 	if _, err := Load(); err == nil {
 		t.Fatal("Load() error = nil, want an error")
